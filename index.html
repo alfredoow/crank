@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>automata</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="script.js"></script>
+  <script src="jmath.js"></script>
+</head>
+
+<body>
+  <span id="debug">0</span></br>
+  <span>energy: </span><span class="battery" id="total_energy">0.0J/0.0J</span></br>
+
+  <div id="energy-bar" class="progress-container">
+    <div class="progress-bar"></div>
+    <div class="progress-text">0.2J/0.5J</div>
+  </div>
+
+  <button class="default-btn" id="energy-btn" onclick="turnCrank()">turn crank</button>
+</body>
+
+</html>
