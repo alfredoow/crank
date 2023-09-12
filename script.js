@@ -33,7 +33,7 @@ function start() {
 
 function update(dt) {
   let notifications = document.getElementById("notifications");
-  document.getElementById("debug").innerHTML = ((temp / max_temp) * 100).toFixed(1) + "%/" + ((1 - (temp / max_temp)) * 100).toFixed(1) + "%";
+  //document.getElementById("debug").innerHTML = ((temp / max_temp) * 100).toFixed(1) + "%/" + ((1 - (temp / max_temp)) * 100).toFixed(1) + "%";
 
   let energy_bar = document.getElementById("energy-bar").querySelector(".progress-bar");
   let energy_bar_text = document.getElementById("energy-bar").querySelector(".progress-text");
