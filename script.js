@@ -22,7 +22,7 @@ window.onblur = function () {
 };
 
 function start() {
-  let empty_log
+  let empty_log;
 
   for (let i=0;i<5;i++) {
     empty_log = document.createElement("li");
