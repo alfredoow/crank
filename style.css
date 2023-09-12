@@ -1,13 +1,12 @@
 body {
   color: white;
-  background-color: #161616
+  background-color: rgb(121, 15, 41);
 }
 
 .default-btn {
   background-color: #363636;
   border: 1px solid white;
   color: white;
-  opacity: 1;
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
@@ -16,13 +15,11 @@ body {
 }
 
 .default-btn:hover {
-  opacity: 1;
   background-color: #525252;
   box-shadow: 1px 1px 5px black;
 }
 
 .default-btn:active {
-  opacity: 1;
   background-color: #363636;
   box-shadow: none;
 }
@@ -30,10 +27,6 @@ body {
 .default-btn:disabled {
   opacity: 0.6;
   pointer-events: none;
-}
-
-.default-btn:focus {
-  outline: none;
 }
 
 .progress-container {
@@ -51,12 +44,74 @@ body {
 }
 
 .progress-container .progress-text {
-  position:absolute;
+  position: absolute;
   text-align: center;
-  right:0;
-  left:0;
-  top:50%;
+  right: 0;
+  left: 0;
+  top: 50%;
   transform: translateY(-50%);
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   text-shadow: 1px 1px 5px black;
+  font-size: 80%;
+}
+
+div .progress-container {
+  display: inline-block;
+  top:8px;
+}
+
+div .vprogress-container {
+  display: inline-block;
+}
+
+.vprogress-container {
+  height: 100px;
+  width: 80px;
+  background-color: #000000;
+  position: relative;
+}
+
+.vprogress-container .vprogress-bar {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  bottom:0;
+  background-color: #51ff8b;
+}
+
+.vprogress-container .vprogress-text {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 5px black;
+  font-size: 80%;
+}
+
+#notifications {
+  position:absolute;
+  width:200px;
+  height:20px;
+  top:50px;
+  right:5px;
+}
+
+#notifications li {
+  list-style-type: none;
+  min-height:100%;
+  width:100%;
+  padding-left:5px;
+  color:white;
+  border:grey solid 1px;
+}
+
+#temp-bar {
+  width:15px;
+}
+
+#temp-bar .vprogress-text {
+  font-size:50%;
 }
